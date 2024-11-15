@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .endpoint-group {
+            margin-bottom: 20px;
+        }
+        .endpoint {
+            background: #fff;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .endpoint strong {
+            color: #007bff;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .description {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Overview</h1>
+    <div class="endpoint-group">
+        <h2>Category Endpoints</h2>
+        <div class="endpoint">
+            <strong>GET</strong> <a href="/api/categories/">/api/categories/</a>
+            <p class="description">Retrieve all categories.</p>
+        </div>
+        <div class="endpoint">
+            <strong>POST</strong> <a href="/api/categories/">/api/categories/</a>
+            <p class="description">Create a new category.</p>
+        </div>
+        <div class="endpoint">
+            <strong>GET</strong> <a href="/api/categories/{id}/">/api/categories/{id}/</a>
+            <p class="description">Retrieve a category by ID.</p>
+        </div>
+        <div class="endpoint">
+            <strong>PUT</strong> <a href="/api/categories/{id}/">/api/categories/{id}/</a>
+            <p class="description">Update a category by ID.</p>
+        </div>
+        <div class="endpoint">
+            <strong>DELETE</strong> <a href="/api/categories/{id}/">/api/categories/{id}/</a>
+            <p class="description">Delete a category by ID.</p>
+        </div>
+    </div>
+
+    <div class="endpoint-group">
+        <h2>Product Endpoints</h2>
+        <div class="endpoint">
+            <strong>GET</strong> <a href="/api/products/">/api/products/</a>
+            <p class="description">Retrieve all products with optional filters.</p>
+        </div>
+        <div class="endpoint">
+            <strong>POST</strong> <a href="/api/products/">/api/products/</a>
+            <p class="description">Create a new product.</p>
+        </div>
+        <div class="endpoint">
+            <strong>GET</strong> <a href="/api/products/{id}/">/api/products/{id}/</a>
+            <p class="description">Retrieve a product by ID.</p>
+        </div>
+        <div class="endpoint">
+            <strong>PUT</strong> <a href="/api/products/{id}/">/api/products/{id}/</a>
+            <p class="description">Update a product by ID.</p>
+        </div>
+        <div class="endpoint">
+            <strong>DELETE</strong> <a href="/api/products/{id}/">/api/products/{id}/</a>
+            <p class="description">Delete a product by ID.</p>
+        </div>
+    </div>
+</body>
+</html>

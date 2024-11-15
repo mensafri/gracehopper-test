@@ -2,6 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from django.core.cache import cache
+from django.shortcuts import render
 from .models import Category, Product
 from .serializers import CategorySerializer, ProductSerializer
 
@@ -102,3 +103,7 @@ def product_detail(request, pk):
         product.delete()
         cache.delete('store:products')  # Invalidate cache
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+def api_overview(request):
+    """Menampilkan daftar endpoint dalam bentuk UI."""
+    return render(request, 'api_overview.html')
